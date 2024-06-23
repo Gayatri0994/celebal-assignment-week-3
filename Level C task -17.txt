@@ -1,0 +1,6 @@
+CREATE LOGIN gayatri WITH PASSWORD = 'gayu';
+
+
+CREATE USER dev FOR LOGIN dev;
+
+EXEC sp_addrolemember 'db_owner', 'gayatri';
